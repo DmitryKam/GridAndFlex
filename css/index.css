@@ -1,8 +1,8 @@
-body{
-/*избавляемся от отступов которые по умолчанию есть у боди и добавляем шифт*/
-    margin:0;
-    padding:0;
-    font-family:"Roboto", "sans-serif";
+body {
+    /*избавляемся от отступов которые по умолчанию есть у боди и добавляем шифт*/
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", "sans-serif";
 }
 
 .main-container {
@@ -14,87 +14,92 @@ body{
 
 /* header styles */
 
-.menu-bar{/*Это икнока ктороая будет вместо навбара*/
+.menu-bar { /*Это икнока ктороая будет вместо навбара*/
     display: none;
 }
-.header-container{
-    width: 100%;/*ширина header */
+
+.header-container {
+    width: 100%; /*ширина header */
     padding: 70px 32px; /*отступы паддинга*/
-    display: grid;/*После того как задал грид контейнеру нужно указать сколько колонок в этом гради контейнере будет*/
-    grid-template-columns: 1fr 3fr 1fr;/*параметры каждой калонки*/
+    display: grid; /*После того как задал грид контейнеру нужно указать сколько колонок в этом гради контейнере будет*/
+    grid-template-columns: 1fr 3fr 1fr; /*параметры каждой калонки*/
     box-sizing: border-box; /*свойство заставляет браузер включаь в вширину элементов всё отступы рамки т .д.*/
 }
-.main-logo{/*Рамер картинки логтипа*/
+
+.main-logo { /*Рамер картинки логтипа*/
     width: 163px;
 }
 
-.header-nav{/*Часть в которой разсположениы сслыки*/
-    display: flex;/*Выравнять элементы по вертикали нужно, делаем через флекс. Главная ось направляется слева направо*/
+.header-nav { /*Часть в которой разсположениы сслыки*/
+    display: flex; /*Выравнять элементы по вертикали нужно, делаем через флекс. Главная ось направляется слева направо*/
     align-items: center; /*то если мы хотим выравнять по вертикали тогда испоьзуем это свойство и выравнивание по центру*/
 }
 
-.header-link{/*отредактируем наш навбар там где ссылки на блог шоп и т.д.*/
+.header-link { /*отредактируем наш навбар там где ссылки на блог шоп и т.д.*/
 
-    margin: 0 7px;    /* Отступ от каждого слова */
-    text-decoration: none;  /* убирает нижнее подчёркивание*/
-    color: #000;  /* цвет чёрный*/
+    margin: 0 7px; /* Отступ от каждого слова */
+    text-decoration: none; /* убирает нижнее подчёркивание*/
+    color: #000; /* цвет чёрный*/
     text-transform: uppercase; /* text upper */
-    font-weight: bold; /* Text жирный*/  
-    font-size:11px; /*изменили размер шрифта */
-    letter-spacing: 3px;/* немного расширили расстояние между буквами*/
+    font-weight: bold; /* Text жирный*/
+    font-size: 11px; /*изменили размер шрифта */
+    letter-spacing: 3px; /* немного расширили расстояние между буквами*/
 }
 
 
-.header-link:hover{ /* псевдо класс используется при наведении*/
-     color: #4c665b;
+.header-link:hover { /* псевдо класс используется при наведении*/
+    color: #4c665b;
 }
 
-.header-social-media{/*класс для контейнера в котором находятся иконочки*/
-    display:flex;
-    justify-content: flex-end;/*сместим икноки в конец вверх*/
-    align-items:center;/*нужно выравнять по перекрётсной оси в центр*/
+.header-social-media { /*класс для контейнера в котором находятся иконочки*/
+    display: flex;
+    justify-content: flex-end; /*сместим икноки в конец вверх*/
+    align-items: center; /*нужно выравнять по перекрётсной оси в центр*/
 }
 
-.header-social-icon{/*раздвинуть иконки*/
-margin: 0 8px;
+.header-social-icon { /*раздвинуть иконки*/
+    margin: 0 8px;
 }
 
 
 /*Хотим сделать чтобы при наведении на бар с иконками и все стали тускнее
 и при выборе определённой она поменяа свой цвет*/
-.header-social-media:hover{/*при наведении на контейнер он меняет свой цвет*/
+.header-social-media:hover { /*при наведении на контейнер он меняет свой цвет*/
     color: #4c6654;
 }
 
-.header-social-icon:hover{/*при наведении на иконку устанавливаем чёрный цвет*/
-    color:#000;
+.header-social-icon:hover { /*при наведении на иконку устанавливаем чёрный цвет*/
+    color: #000;
 }
 
 /*styles for banner section*/
-.banner{
+.banner {
     display: grid;
     grid-template-columns: 5fr 6fr;
     align-items: end;
     padding: 32px;
 }
 
-.banner-img{
+.banner-img {
     width: 100%;
 }
 
-.banner-content{
+.banner-content {
     padding-left: 30px;
     display: grid;
-    grid-template-areas: "header ."
-    "latest insta";
+    /*Этим свойством мы можем задавть шаблон и
+    по этому шаблону какой элемент и где хотим распологать
+    одни кавычки одна строка
+    */
+    grid-template-areas: "header ." "latest insta";
 }
 
-.banner-img-container{
+.banner-img-container {
     display: flex;
     align-items: flex-end;
 }
 
-.banner-content-header{
+.banner-content-header {
     font-size: 36px;
     width: 280px;
     border-top: 3px solid #000;
@@ -104,32 +109,126 @@ margin: 0 8px;
     grid-area: header;
 }
 
-.banner-latest{
+.banner-latest {
     width: 230px;
 }
 
 
-.banner-latest-container{
+.banner-latest-container {
     grid-area: latest;
 }
 
-.banner-insta-container{
+.banner-insta-container {
     grid-area: insta;
 }
 
-.banner-content-img-container{
+.banner-content-img-container {
     position: relative;
     display: flex;
-    align-items:flex-end;
+    align-items: flex-end;
 }
 
-.banner-bottom-text{
+.banner-bottom-text {
     position: absolute;
-    left: 30px;
-    bottom:25px;
+    left: 30px; /*добавляет прослойку отлевой границы контейнера до границы данного элемента*/
+    bottom: 25px;
     font-size: 20px;
-    font-weight: bold;
+    font-weight: bold;/*ткуст жирный*/
     color: #fff;
+    text-transform: uppercase;/*верхний регистр*/
+    text-decoration: none;/*уберём нижнее подчёркивание*/
+}
+
+/* styles for subscribe section*/
+
+.subscribe{
+    margin: 32px;
+    background-color: #4c665b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0 50px;
+
+}
+
+.subscribe-header{
+
+    color: white;
     text-transform: uppercase;
-    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 30px;
+}
+
+.subscribe-input{
+    height: 50px;
+    box-sizing: border-box; /*чтобы учитывались все отступы и размеры рамок в интпуте*/
+    padding: 15px;
+}
+
+.subscribe-mail{
+    width: 240px;
+}
+
+.subscribe-btn{
+    width: 170px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-color: #EBEFEE;
+    border:none;
+    cursor: pointer; /*Вместо курсора пальчик*/
+}
+
+/*style for blog section*/
+
+.blog{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /*задаём 3 блока в одну строку*/
+}
+
+.blog-item{
+    padding:24px;
+}
+
+.blog-img{
+    width: 100%;
+}
+
+.blog-img-container{
+    position: relative;
+}
+.blog-img-desc-container{
+    position: absolute;
+    bottom: -70px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.blog-img-desc{
+    width: 150px;
+    height:140px;
+    background-color: #ECF0EF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.underline{
+    background-color: black;
+    width: 45px;
+    height: 2px;
+    margin: 3px auto;
+    border: none;
+}
+
+.blog-desc-container{
+    margin-top: 90px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    text-align: justify;
 }
