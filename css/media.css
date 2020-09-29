@@ -55,6 +55,22 @@
         font-size: 18px;
         width: 180px;
     }
+    .blog-img-desc{
+        width: 100px;
+        height: 90px;
+        font-size: 20px;
+    }
+    .blog-desc-container{
+        margin-top: 70px;
+        font-size: 14px;
+    }
+    .blog-img-desc-container{
+        bottom: -45px;
+    }
+}
+
+.insta{
+    grid-template-columns: repeat(2, 1fr);
 }
 
 @media screen and (max-width: 700px) {
@@ -71,6 +87,10 @@
         font-size: 13px;
     }
 
+    .intro{
+        grid-template-columns: 1fr;
+        padding: 32px;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -125,4 +145,28 @@
     .subscribe-mail{
         width: 220px;
     }
+
+    .blog{
+        grid-template-columns: 1fr;
+    }
+    .blog-img-desc{
+        width: 140px;
+        height: 120px;
+        font-size: 24px;
+    }
+    .blog-desc-container{
+        margin-top: 70px;
+        font-size: 14px;
+    }
+    .blog-img-desc-container{
+        bottom: -60px;
+    }
+    .insta-item-description{
+        padding: 8px;
+        font-size: 22px;
+    }
+    .insta-item{
+        padding: 16px;
+    }
 }
+

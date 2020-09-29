@@ -133,15 +133,15 @@ body {
     left: 30px; /*добавляет прослойку отлевой границы контейнера до границы данного элемента*/
     bottom: 25px;
     font-size: 20px;
-    font-weight: bold;/*ткуст жирный*/
+    font-weight: bold; /*ткуст жирный*/
     color: #fff;
-    text-transform: uppercase;/*верхний регистр*/
-    text-decoration: none;/*уберём нижнее подчёркивание*/
+    text-transform: uppercase; /*верхний регистр*/
+    text-decoration: none; /*уберём нижнее подчёркивание*/
 }
 
 /* styles for subscribe section*/
 
-.subscribe{
+.subscribe {
     margin: 32px;
     background-color: #4c665b;
     display: flex;
@@ -151,7 +151,7 @@ body {
 
 }
 
-.subscribe-header{
+.subscribe-header {
 
     color: white;
     text-transform: uppercase;
@@ -159,45 +159,65 @@ body {
     font-size: 30px;
 }
 
-.subscribe-input{
+.subscribe-input {
     height: 50px;
     box-sizing: border-box; /*чтобы учитывались все отступы и размеры рамок в интпуте*/
     padding: 15px;
 }
 
-.subscribe-mail{
+.subscribe-mail {
     width: 240px;
 }
 
-.subscribe-btn{
+.subscribe-btn {
     width: 170px;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 2px;
     background-color: #EBEFEE;
-    border:none;
+    border: none;
     cursor: pointer; /*Вместо курсора пальчик*/
+}
+
+/*style for introsection*/
+.intro {
+    padding: 32px 72px;
+    display: grid;
+    grid-template-columns: 4fr 6fr;
+}
+
+.intro-header {
+    text-transform: uppercase;
+    font-size: 32px;
+    margin-top: 16px;
+}
+.intro-text{
+    font-weight: lighter;
+    text-align: justify;/*по ширине*/
+    padding-left: 10px;
+
 }
 
 /*style for blog section*/
 
-.blog{
+.blog {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /*задаём 3 блока в одну строку*/
 }
 
-.blog-item{
-    padding:24px;
+.blog-item {
+    padding: 24px;
 }
 
-.blog-img{
+.blog-img {
     width: 100%;
 }
 
-.blog-img-container{
+.blog-img-container {
     position: relative;
 }
-.blog-img-desc-container{
+
+.blog-img-desc-container {
     position: absolute;
     bottom: -70px;
     display: flex;
@@ -205,9 +225,9 @@ body {
     width: 100%;
 }
 
-.blog-img-desc{
+.blog-img-desc {
     width: 150px;
-    height:140px;
+    height: 140px;
     background-color: #ECF0EF;
     display: flex;
     flex-direction: column;
@@ -218,7 +238,7 @@ body {
     font-weight: bold;
 }
 
-.underline{
+.underline {
     background-color: black;
     width: 45px;
     height: 2px;
@@ -226,9 +246,57 @@ body {
     border: none;
 }
 
-.blog-desc-container{
+.blog-desc-container {
     margin-top: 90px;
     font-weight: lighter;
     letter-spacing: 1px;
     text-align: justify;
+}
+
+/*styles fr insta section*/
+.insta {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);;
+}
+
+.insta-item {
+    padding: 24px;
+}
+
+.insta-item-img {
+    width: 100%;
+}
+
+.insta-item-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 24px;
+}
+
+/*styles footer*/
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 2px solid black;
+    padding: 40px;
+}
+
+.footer-logo {
+    width: 140px;
+    margin-bottom: 40px;
+}
+
+.footer-copyright {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: normal;
 }
